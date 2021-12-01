@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="./car.js"></script>
+</head>
+
+<body>
+    <a-scene>
+        <a-assets>
+            <a-asset-item id="CraneGltf" src="./Crane/scene.gltf"></a-asset-item>
+        </a-assets>
+
+        <a-sky color="#FFFFFF"></a-sky>
+        <!-- <a-entity car obj-model="obj: #TableObj; mtl: #TableMtl" position="0 0 0" rotation="0 0 0" scale="0 0 0 "></a-entity> -->
+        <a-gltf-model src="#CraneGltf" scale="9 9 9" car></a-gltf-model>
+        <a-camera position="0 0 5"></a-camera>
+    </a-scene>
+</body>
+</html>
